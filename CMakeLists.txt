@@ -10,13 +10,13 @@ cmake_minimum_required(VERSION 3.6)
 set(GDS_FILENAME "mask_example.gds")
 set(MASK_NAME "mask_example")
 
-set(PDK_NAME "pdk_demo")
+set(PDK_NAME "IPL_pdk_demo")
 set(PDK_VERSION "0.2")
 
 ################
 
 # execute_process(COMMAND "start C:\\klayout-0.25.9-win64\\klayout_app.exe")
-# DO NOT modifiy codes below
+# DO NOT modifiy codes below  
 message(STATUS "Downloading mask.cmake from https://bintray.com/cmalips/libmask/")
 file(DOWNLOAD "https://bintray.com/cmalips/libmask/download_file?file_path=mask.cmake"
          "${CMAKE_BINARY_DIR}/mask.cmake")
