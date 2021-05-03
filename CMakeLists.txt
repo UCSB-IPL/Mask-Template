@@ -17,8 +17,7 @@ set(PDK_VERSION "0.2")
 
 # execute_process(COMMAND "start C:\\klayout-0.25.9-win64\\klayout_app.exe")
 # DO NOT modifiy codes below  
-message(STATUS "Downloading mask.cmake from https://bintray.com/cmalips/libmask/")
-file(DOWNLOAD "https://bintray.com/cmalips/libmask/download_file?file_path=mask.cmake"
+message(STATUS "Downloading mask.cmake ...")
+file(DOWNLOAD "https://raw.githubusercontent.com/yuanliuus/MaskFiles/master/mask.cmake"
          "${CMAKE_BINARY_DIR}/mask.cmake")
 include(${CMAKE_BINARY_DIR}/mask.cmake)
-
